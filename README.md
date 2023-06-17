@@ -328,13 +328,50 @@ The code provided demonstrates different methods for time series modeling and fo
 
 Each section provides a different approach to time series modeling and forecasting, allowing you to compare and choose the method that best suits your needs.
 
+Note: Each of the model is predicting stock prices but one must remember that we don't want to predict how close price is to over prediction. We want to know weather making investment on that particular day is helpful or not. So here are other approches used to find wheather on that day is good to make investment or not
+
+#### Classification models
+Classification models where made to pridict weather we will get profit or loss if we invest on that day. I made one new colunm in my dataset with name 'Target' whcih was 0 or 1. 0 when it was not good to invest on that day and it was 1 when it was good to invest. I used various advanced classification models and predicted the results.
+
+Below are descriptions and results of some of the models used
+
+1. Logistic Regression:
+   - Features (X) and target variable (y) were separated.
+   - The dataset was split into training and testing sets.
+   - Logistic regression model was created and fitted to the training data.
+   - Target variable was predicted for the test set.
+   - Model performance metrics were calculated, including accuracy, recall, precision, and classification report.
+   - The accuracy was found to be 0.502, indicating poor performance in predicting investment profitability.
+
+2. Random Forest Classifier:
+   - Features (X) and target variable (y) were separated.
+   - The dataset was split into training and testing sets.
+   - Random Forest classifier was created and fitted to the training data.
+   - Target variable was predicted for the test set.
+   - Model performance metrics were calculated, including accuracy, recall, precision, and classification report.
+   - The accuracy was found to be 0.496, indicating similar performance to logistic regression.
+
+3. Random Forest Classifier with Hyperparameter Tuning:
+   - Features (X) and target variable (y) were separated.
+   - The dataset was split into training and testing sets.
+   - Random Forest classifier was created with hyperparameters to tune.
+   - Randomized search with cross-validation (CV) was performed to find the best hyperparameters.
+   - The best model and its hyperparameters were obtained.
+   - Target variable was predicted for the test set using the best model.
+   - Model performance metrics were calculated, including accuracy, recall, precision, and classification report.
+   - The accuracy was found to be 0.491, similar to the previous models.
+   - The best hyperparameters were determined as {'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 5}.
+
+Similarly I used many other methods like Gradient Boosting Classifier, Support Vector Machines, MLPClassifiers and many such also performed hyperparameters tuning on them. But acuracy of prediction was always close to zero. The prediction was not as easy I thought. 
+
+
+
 ### 9. Iterative Improvement
-Iterate and refine the model by incorporating additional data, adjusting feature selection, or trying different machine learning algorithms.
-Continuously monitor and update the model as new data becomes available.
+I tried to perform analysis with my recent news data as well. Constrain of resources resulted to so poor prediction. Still there are many ideas in my mind but for that I would need resources like proper news data related to any specific domain of any time. Maybe subscrption of newsAPI would help me a lot in this process. But till then. I have to rely on qualitaive analysis insted of quantitative.
 
 
 ## Results
-The results of the stock price prediction, along with the evaluation metrics, can be found in the `results/` directory.
+Currently Netflix is using diffrent Strategies to tackel the problems, its always innovating. Also its news account blocking in help them to gain profit. I feels that its not easy that netflix might break down and one can trust to invest their stock in it.
 
 ## Contributing
 Contributions to this project are welcome. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
