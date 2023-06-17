@@ -123,6 +123,61 @@ Perform exploratory data analysis (EDA) on the historical stock price data to un
 Extract important features such as moving averages, relative strength index (RSI), and other technical indicators.
 Split the data into training and testing sets.
 
+Here's a breakdown of your code and its functionality:
+
+1. Plotting Closing Price of Netflix:
+   - The code uses matplotlib to plot the closing price of Netflix stock over time.
+   - The plot includes vertical lines indicating the dates when the stock was split into multiple parts.
+   - The stock split dates are obtained from the "stock_split_days" dataframe.
+   - The plot also includes text annotations for the stock split dates.
+   - The closing price data is retrieved from the "data_nflx" dataframe.
+
+2. Plotting Adjusted Closing Price:
+   - The code plots the adjusted closing price of Netflix stock over time.
+   - The plot is similar to the previous one, but with adjusted closing prices.
+   - The adjusted closing price accounts for events like stock splits and dividends.
+
+3. Comparing Trends with Competitors:
+   - The code defines a function called "plot_closing_values" that takes a list of stock tickers as input.
+   - It fetches the historical stock price data for each ticker symbol using the yfinance library.
+   - The closing values for each ticker are plotted on the same graph, using different colors for each ticker.
+   - In your example, the tickers used are 'NFLX' (Netflix), 'DIS' (Disney), and 'T' (AT&T).
+
+4. Plotting Moving Averages:
+   - The code calculates and plots the moving averages for the closing price of Netflix stock.
+   - Two moving averages are calculated: SMA 50 (Simple Moving Average with a window of 50) and SMA 200.
+   - The closing prices and moving averages are plotted on the same graph.
+
+5. Plotting Candlestick Chart:
+   - The code uses mplfinance library to plot a candlestick chart for Netflix stock.
+   - The candlestick chart provides information about the opening, closing, high, and low prices of the stock for each day.
+   - The chart also includes volume bars.
+
+6. Plotting Support and Resistance Levels:
+   - The code plots the closing price of Netflix stock and adds support and resistance levels to the plot.
+   - Support and resistance levels are predefined values indicating potential levels where the stock price might reverse.
+   - The support levels are represented by green horizontal lines, and the resistance levels are represented by red horizontal lines.
+
+7. Correlation Analysis:
+   - The code calculates the correlation coefficients between the 'Close', 'Volume', 'Open', and 'Adjusted Close' columns of the Netflix stock data.
+   - The correlation matrix is printed to show the relationships between these variables.
+
+8. Autocorrelation Analysis:
+   - The code uses the plot_acf function from the statsmodels library to plot the autocorrelation function (ACF) for the 'Close' prices of Netflix stock.
+   - The ACF measures the correlation between the stock price at a given time and its previous values at different lags.
+   - The plot helps identify any significant patterns or dependencies in the stock price data.
+
+9. Yearly Aggregated Trend:
+   - The code groups the Netflix stock data by year and calculates the average opening and closing prices, as well as the total volume for each year.
+   - The yearly aggregated trend is then plotted, showing the average closing price for each year.
+
+10. Monthly Aggregated Trend:
+   - The code filters the Netflix stock data to include only data from 2004 onwards.
+   - The data is then grouped by year and month, and the average opening and closing prices, as well as the total volume, are calculated for each month.
+   - The monthly aggregated trend is plotted, showing the average closing price for each month, with different colors for each
+
+.
+
 ### 4. Textual Analysis
 Perform sentiment analysis on the collected news headlines using techniques like Natural Language Processing (NLP).
 Assign sentiment scores or labels (positive, negative, neutral) to each headline based on the sentiment analysis results.
