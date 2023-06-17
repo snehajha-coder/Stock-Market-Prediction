@@ -90,8 +90,33 @@ To gather the necessary data for Stock Market Prediction using Numerical and Tex
 Note: It is important to ensure the proper usage and compliance with the terms and conditions of the APIs used for data collection.
 
 ### 2. Data Preprocessing
-Clean and preprocess the historical stock price data by handling missing values, outliers, and adjusting for any stock splits or dividends.
-Preprocess the textual data by removing unnecessary characters, converting to lowercase, and applying techniques like tokenization and stemming/lemmatization.
+1. Stock Price Data:
+   - The dataset has 5303 entries with 8 columns: Date, Open, High, Low, Close, Volume, Dividends, and Stock Splits.
+   - There are no missing values in the dataset.
+   - Descriptive statistics of the data show summary statistics for each column.
+   - Two stock split events were identified on February 12, 2004, and July 15, 2015.
+
+2. Adjusting for Stock Splits and Dividends:
+   - The code adjusts the stock prices for stock splits and dividends to accurately reflect the true value of the stock.
+   - The 'Stock Splits' column is replaced with 1 where the value is 0 to avoid division errors.
+   - The adjusted close prices are calculated by dividing the 'Close' prices by the cumulative product of the 'Stock Splits' column.
+   - Dividend amounts are subtracted from the adjusted close prices to account for the impact of dividends.
+   - The unnecessary columns are dropped, and the resulting DataFrame ('data_preprocessed') contains the adjusted close prices.
+
+3. Preprocessing News Headlines for Sentiment Analysis:
+   - The code demonstrates text preprocessing techniques applied to news headlines for sentiment analysis.
+   - The 'preprocess_text' function is defined to tokenize, remove stopwords, perform stemming, and lemmatize the text.
+   - The function is applied to the 'Headline' column in the 'news_api_netfix_data' and 'bing_netfilx_data' DataFrames.
+   - Preprocessed headlines are stored in the 'Headline_preprocessed' column.
+
+4. Making Indian News Headlines Data Short:
+   - Duplicates are dropped from the 'india_news_headlines' DataFrame.
+   - The 'publish_date' column is converted to the 'datetime' data type.
+   - The DataFrame is filtered to include only the 'publish_date' and 'headline_text' columns.
+   - News headlines are grouped by date, joining them into a single string per date.
+   - The 'publish_date' column is set as the index.
+   - The data is sorted by date in ascending order.
+   - Finally, the 'publish_date' column is reset as a regular column.
 
 ### 3. Numerical Analysis
 Perform exploratory data analysis (EDA) on the historical stock price data to understand trends, patterns, and relationships.
