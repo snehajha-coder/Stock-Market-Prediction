@@ -261,8 +261,23 @@ Additionally, we calculate the daily mean sentiment score and plot it as follows
 These visualizations provide insights into the overall sentiment expressed in the news headlines related to Netflix.
 
 ### 5. Feature Integration
-Combine the numerical features derived from the historical stock price data with the sentiment scores from the textual analysis.
-Create a merged dataset that includes both numerical and textual features.
+To combine the textual data (news headlines) with the numerical data (stock market information), follow these steps:
+
+1. Load the textual data: The code loads the news headlines data from a CSV file called 'india-news-headlines_preprocessed_merged.csv'. It selects only the necessary columns, which are the publication date and the preprocessed headline text.
+
+2. Load the numerical data: The code loads the stock market data from a CSV file called 'data_nflx.csv'. It converts the 'Date' column to the proper date format.
+
+3. Merge the datasets: The code merges the textual and numerical datasets based on the date. This combines the news headlines with the corresponding stock market information.
+
+4. Remove unnecessary columns: The code removes unnecessary columns from the combined dataset. Specifically, it drops the 'publish_date', 'Close', 'Returns', and 'Dividends' columns.
+
+5. Rename columns (if necessary): If there is an unnamed column in the combined dataset, the code renames it to 'Date' for clarity.
+
+6. Save the combined data: The code saves the combined dataset to a new CSV file called 'final_data_combined_v01.csv'.
+
+7. Visualize the correlation: The code generates a heatmap to visualize the correlation between different columns in the combined dataset. This helps identify any relationships or patterns between the stock market data and the sentiment scores of the news headlines.
+     <img src="Images/Image-19.png" alt="plot" height="400">
+
 
 ### 6. Model Training
 Select a suitable machine learning algorithm such as regression, support vector machines, or neural networks.
