@@ -279,45 +279,18 @@ To combine the textual data (news headlines) with the numerical data (stock mark
      <img src="Images/Image-19.png" alt="plot" height="400">
 
 
-### 6. Model Training
+### 6. Model Training and Evalulation
 Select a suitable machine learning algorithm such as regression, support vector machines, or neural networks.
 Split the merged dataset into training and testing sets.
 Train the machine learning model using the training data.
-
-### 7. Model Evaluation
-Evaluate the performance of the trained model using appropriate evaluation metrics such as mean squared error (MSE), root mean squared error (RMSE), or accuracy.
-Fine-tune the model parameters if necessary to improve the performance.
-
-### 8. Prediction and Analysis
-Use the trained model to make predictions on the unseen data (testing set).
-Analyze the predicted stock prices/performance and compare them with the actual values.
-Evaluate the accuracy and effectiveness of the hybrid model in predicting stock prices/performance.
 
 ### 9. Iterative Improvement
 Iterate and refine the model by incorporating additional data, adjusting feature selection, or trying different machine learning algorithms.
 Continuously monitor and update the model as new data becomes available.
 
-## Data
-The dataset used for this project should be
-
- stored in the `data/` directory. It should contain historical stock price data in CSV format.
-
-## Model Selection
-You can experiment with different machine learning models by modifying the `main.py` script. The current implementation includes [list the models used].
-
-## Evaluation
-Model performance is evaluated using [mention the evaluation metrics used, such as mean squared error (MSE) or mean absolute percentage error (MAPE)].
 
 ## Results
 The results of the stock price prediction, along with the evaluation metrics, can be found in the `results/` directory.
 
 ## Contributing
 Contributions to this project are welcome. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-
-## License
-[Specify the license under which your code is released, such as MIT or Apache 2.0.]
-
-## Contact
-[Provide your contact information or any other relevant links, such as your email or a link to your website.]
-
-Feel free to customize this template according to your specific project requirements. Good luck with your stock price prediction code!
