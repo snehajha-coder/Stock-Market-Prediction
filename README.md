@@ -125,7 +125,7 @@ Split the data into training and testing sets.
 
 Here's a breakdown of your code and its functionality:
 
-1. Plotting Closing Price of Netflix:
+#### 1. Plotting Closing Price of Netflix:
    - The code uses matplotlib to plot the closing price of Netflix stock over time.
    - The plot includes vertical lines indicating the dates when the stock was split into multiple parts.
    - The stock split dates are obtained from the "stock_split_days" dataframe.
@@ -136,14 +136,14 @@ Here's a breakdown of your code and its functionality:
 
 
 
-2. Plotting Adjusted Closing Price:
+#### 2. Plotting Adjusted Closing Price:
    - The code plots the adjusted closing price of Netflix stock over time.
    - The plot is similar to the previous one, but with adjusted closing prices.
    - The adjusted closing price accounts for events like stock splits and dividends.
 
  <img src="Images/Image-2.png" alt="plot" width="500">
 
-3. Comparing Trends with Competitors:
+#### 3. Comparing Trends with Competitors:
    - The code defines a function called "plot_closing_values" that takes a list of stock tickers as input.
    - It fetches the historical stock price data for each ticker symbol using the yfinance library.
    - The closing values for each ticker are plotted on the same graph, using different colors for each ticker.
@@ -151,48 +151,48 @@ Here's a breakdown of your code and its functionality:
 
 <img src="Images/Image-3.png" alt="plot" width="500"> <img src="Images/Image-4.png" alt="plot" width="500">
 
-4. Plotting Moving Averages:
+#### 4. Plotting Moving Averages:
    - The code calculates and plots the moving averages for the closing price of Netflix stock.
    - Two moving averages are calculated: SMA 50 (Simple Moving Average with a window of 50) and SMA 200.
    - The closing prices and moving averages are plotted on the same graph.
 
 <img src="Images/Image-5.png" alt="plot" width="500">
 
-5. Plotting Candlestick Chart:
+#### 5. Plotting Candlestick Chart:
    - The code uses mplfinance library to plot a candlestick chart for Netflix stock.
    - The candlestick chart provides information about the opening, closing, high, and low prices of the stock for each day.
    - The chart also includes volume bars.
 
 <img src="Images/Image-6.png" alt="plot" width="500"> <img src="Images/Image-7.png" alt="plot" width="500">
 
-6. Plotting Support and Resistance Levels:
+#### 6. Plotting Support and Resistance Levels:
    - The code plots the closing price of Netflix stock and adds support and resistance levels to the plot.
    - Support and resistance levels are predefined values indicating potential levels where the stock price might reverse.
    - The support levels are represented by green horizontal lines, and the resistance levels are represented by red horizontal lines.
 
 <img src="Images/Image-8.png" alt="plot" width="500">
 
-7. Correlation Analysis:
+#### 7. Correlation Analysis:
    - The code calculates the correlation coefficients between the 'Close', 'Volume', 'Open', and 'Adjusted Close' columns of the Netflix stock data.
    - The correlation matrix is printed to show the relationships between these variables.
 
 <img src="Images/Image-24.png" alt="plot" width="500">
 
 
-8. Autocorrelation Analysis:
+#### 8. Autocorrelation Analysis:
    - The code uses the plot_acf function from the statsmodels library to plot the autocorrelation function (ACF) for the 'Close' prices of Netflix stock.
    - The ACF measures the correlation between the stock price at a given time and its previous values at different lags.
    - The plot helps identify any significant patterns or dependencies in the stock price data.
 
 <img src="Images/Image-9.png" alt="plot" width="500"> <img src="Images/Image-10.png" alt="plot" width="500">
 
-9. Yearly Aggregated Trend:
+#### 9. Yearly Aggregated Trend:
    - The code groups the Netflix stock data by year and calculates the average opening and closing prices, as well as the total volume for each year.
    - The yearly aggregated trend is then plotted, showing the average closing price for each year.
 
 <img src="Images/Image-11.png" alt="plot" width="500"> <img src="Images/Image-12.png" alt="plot" width="500">
 
-10. Monthly Aggregated Trend:
+#### 10. Monthly Aggregated Trend:
    - The code filters the Netflix stock data to include only data from 2004 onwards.
    - The data is then grouped by year and month, and the average opening and closing prices, as well as the total volume, are calculated for each month.
    - The monthly aggregated trend is plotted, showing the average closing price for each month, with different colors for each
