@@ -131,7 +131,9 @@ Here's a breakdown of your code and its functionality:
    - The stock split dates are obtained from the "stock_split_days" dataframe.
    - The plot also includes text annotations for the stock split dates.
    - The closing price data is retrieved from the "data_nflx" dataframe.
- ![Plot](Images/Image-1.png)
+ 
+ <img src="Images/Image-1.png" alt="plot" width="300">
+
 
 
 2. Plotting Adjusted Closing Price:
