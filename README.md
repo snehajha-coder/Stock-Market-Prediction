@@ -280,9 +280,53 @@ To combine the textual data (news headlines) with the numerical data (stock mark
 
 
 ### 6. Model Training and Evalulation
-Select a suitable machine learning algorithm such as regression, support vector machines, or neural networks.
-Split the merged dataset into training and testing sets.
-Train the machine learning model using the training data.
+#### Time series modeling and forecasting of Stock-Price
+The code provided demonstrates different methods for time series modeling and forecasting using Python. Here's a breakdown of each section:
+
+1. Univariate Modeling with ARIMA:
+   - The code imports the necessary libraries and modules for ARIMA modeling.
+   - It splits the data into training and testing sets using `temporal_train_test_split`.
+   - It creates an ARIMA model with the specified order and fits it to the training data.
+   - It generates forecasts for the test data using the trained model.
+   - It calculates performance metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE).
+   - Finally, it prints the calculated error metrics.
+
+2. Exponential Smoothing (ETS):
+   - The code imports the required modules for exponential smoothing.
+   - It splits the data into training and testing sets using `temporal_train_test_split`.
+   - It creates an ExponentialSmoothing model with the specified trend and seasonality parameters and fits it to the training data.
+   - It generates forecasts for the test data.
+   - It calculates the MAE, RMSE, and MAPE metrics for the forecasts.
+   - Finally, it prints the calculated error metrics.
+   - <img src="Images/Image-20.png" alt="plot" height="400">
+
+
+3. Finding the Best Value for Seasonality:
+   - The code defines a function to calculate the MAE for a given seasonality value in exponential smoothing.
+   - It assigns a seasonality value and calculates the MAE using the function.
+   - Finally, it prints the MAE for the given seasonality value.
+   - <img src="Images/Image-21.png" alt="plot" height="400">
+
+4. Multivariate Modeling:
+   - The code demonstrates multivariate modeling using an LSTM model.
+   - It imports the necessary libraries and modules for LSTM modeling.
+   - It prepares the data by scaling and splitting it into training and testing sets.
+   - It defines an LSTM model and trains it on the training sequences.
+   - It evaluates the model on the test sequences and makes predictions.
+   - It denormalizes the predicted prices and visualizes the actual and predicted stock prices using a plot.
+   - <img src="Images/Image-22.png" alt="plot" height="400">
+
+5. Alternative LSTM Modeling:
+   - The code demonstrates an alternative approach to LSTM modeling using TensorFlow.
+   - It imports the necessary libraries and modules.
+   - It preprocesses the data by normalizing it and splitting it into training and testing sets.
+   - It creates input sequences and labels for training.
+   - It builds and trains an LSTM model on the training data.
+   - It makes predictions on the test data and evaluates the model's performance.
+   - Finally, it visualizes the actual and predicted values using a plot.
+   - <img src="Images/Image-23.png" alt="plot" height="400">
+
+Each section provides a different approach to time series modeling and forecasting, allowing you to compare and choose the method that best suits your needs.
 
 ### 9. Iterative Improvement
 Iterate and refine the model by incorporating additional data, adjusting feature selection, or trying different machine learning algorithms.
