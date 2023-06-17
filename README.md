@@ -11,31 +11,40 @@ This repository presents a hybrid model for predicting stock prices by leveragin
 
 ## Requirements
 - Python (version 3.9.16)
-- Libraries: []
+- Libraries:
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - nltk
+  - matplotlib
+  - seaborn
+  - tensorflow
+  - keras
 
 ## Installation
 1. Clone the repository:
-```
-git clone https://github.com/your-username/stock-price-prediction.git
-```
+   ```
+   git clone https://github.com/snehajha-coder/Stock-Market-Prediction.git
+   ```
 2. Install the required libraries:
-```
-pip install -r requirements.txt
-```
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 1. Preprocess the stock price data by running the preprocessing script:
-```
-python preprocess.py
-```
+   ```
+   python preprocess.py
+   ```
 2. Train and evaluate the machine learning models by running the main script:
-```
-python main.py
-```
+   ```
+   python main.py
+   ```
 3. View the predictions and evaluation results in the output files or visualize them using the provided visualization script:
-```
-python visualize.py
-```
+   ```
+   python visualize.py
+   ```
 
 ## Data
 The dataset used for this project should be stored in the `data/` directory. It should contain historical stock price data in CSV format.
