@@ -220,8 +220,41 @@ Here's a breakdown of your code and its functionality:
 
 
 ### 4. Textual Analysis
-Perform sentiment analysis on the collected news headlines using techniques like Natural Language Processing (NLP).
-Assign sentiment scores or labels (positive, negative, neutral) to each headline based on the sentiment analysis results.
+## Textual Analysis
+
+In this section, we perform textual analysis on the news headlines related to Netflix. We aim to understand the sentiment expressed in these headlines using two different approaches: TextBlob and VADER sentiment analysis.
+
+### TextBlob Sentiment Analysis
+
+We utilize the TextBlob library to perform sentiment analysis on the preprocessed headlines. The sentiment analysis is performed as follows:
+
+1. Sentiment Classification:
+   - Each headline is processed using TextBlob to determine its sentiment polarity, which can be positive, negative, or neutral.
+   - The sentiment polarity is categorized into 'Positive,' 'Negative,' or 'Neutral' based on the polarity score.
+
+The resulting sentiment classification is then added as a new column in the DataFrame. The updated DataFrame is saved as 'news_api_netfix_data_sentiment.csv'.
+
+### VADER Sentiment Analysis
+
+We employ the VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment analysis tool from the NLTK library. The sentiment analysis is performed as follows:
+
+1. Sentiment Score Calculation:
+   - The VADER sentiment analyzer is initialized.
+   - A custom function is created to calculate the sentiment score for each headline using the compound score returned by VADER.
+
+The sentiment scores are then added as a new column in the DataFrame.
+
+### Sentiment Analysis Visualization
+
+To visualize the sentiment analysis results, we plot the sentiment scores against the corresponding dates:
+
+- Sentiment Score vs Date: A line plot that displays the sentiment scores over time for the headlines.
+
+Additionally, we calculate the daily mean sentiment score and plot it as follows:
+
+- Daily Mean Sentiment Score: A line plot that shows the average sentiment score for each day based on the headlines.
+
+These visualizations provide insights into the overall sentiment expressed in the news headlines related to Netflix.
 
 ### 5. Feature Integration
 Combine the numerical features derived from the historical stock price data with the sentiment scores from the textual analysis.
