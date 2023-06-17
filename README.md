@@ -249,10 +249,14 @@ The sentiment scores are then added as a new column in the DataFrame.
 To visualize the sentiment analysis results, we plot the sentiment scores against the corresponding dates:
 
 - Sentiment Score vs Date: A line plot that displays the sentiment scores over time for the headlines.
+-   <img src="Images/Image-17.png" alt="plot" height="400">
+
 
 Additionally, we calculate the daily mean sentiment score and plot it as follows:
 
 - Daily Mean Sentiment Score: A line plot that shows the average sentiment score for each day based on the headlines.
+-   <img src="Images/Image-18.png" alt="plot" height="400">
+
 
 These visualizations provide insights into the overall sentiment expressed in the news headlines related to Netflix.
 
