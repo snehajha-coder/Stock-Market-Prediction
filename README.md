@@ -198,6 +198,25 @@ Here's a breakdown of your code and its functionality:
    - The monthly aggregated trend is plotted, showing the average closing price for each month, with different colors for each
   <img src="Images/Image-13.png" alt="plot" height="400">
 
+#### 11. Calculating Daily Returns and Volatility:
+   - We calculate the daily returns of Netflix stock by using the percentage change in the closing price.
+   - The volatility is then calculated as the standard deviation of the daily returns.
+   - The volatility is plotted over time, using a 30-day rolling window for smoothing.
+
+   ![Volatility Analysis of Netflix](Images/Image-14.png)
+
+#### 12. Analyzing Weekday Mean Stock Price:
+   - We group the stock price data by weekdays (Monday to Friday) and calculate the mean and standard deviation of the stock price for each weekday.
+   - The mean stock prices are plotted, and the standard deviations are displayed as text annotations.
+
+   ![Weekdays Mean Stock Price](Images/Image-15.png)
+
+#### 13. Performing Seasonal Decomposition:
+   - We apply seasonal decomposition to the closing price data using the statsmodels library.
+   - The decomposition separates the data into trend, seasonal, and residual components.
+   - The components are plotted individually to visualize their patterns and contributions.
+
+   ![Seasonal Decomposition](Images/Image-16.png)
 
 
 ### 4. Textual Analysis
