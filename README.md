@@ -74,9 +74,20 @@ By following these steps and modifying the provided Jupyter Notebook code, you c
 
 ## Steps Involved
 
-### 1. Data Collection
-Gather historical stock price data for the target stock from reliable sources such as financial APIs or databases.
-Collect relevant news headlines or articles related to the target stock from news APIs or web scraping.
+### Data Collection
+To gather the necessary data for Stock Market Prediction using Numerical and Textual Analysis, the following steps were followed:
+
+1. Historical Stock Price Data:
+   - The historical stock price data was collected from Yahoo Finance.
+   - Yahoo Finance provides a comprehensive and reliable source of historical stock price information for various stocks.
+   - The data includes the date, open price, close price, high price, low price, and volume traded for each trading day.
+
+2. News Headlines and Articles:
+   - News headlines and articles related to the target stock were collected using two APIs: newsAPI and BingNewsAPI.
+   - These APIs allow access to a wide range of news sources and provide relevant news content for analysis.
+   - In addition, the dataset available at [this website](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DPQMQH) was used.
+
+Note: It is important to ensure the proper usage and compliance with the terms and conditions of the APIs used for data collection.
 
 ### 2. Data Preprocessing
 Clean and preprocess the historical stock price data by handling missing values, outliers, and adjusting for any stock splits or dividends.
