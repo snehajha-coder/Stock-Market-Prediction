@@ -1,45 +1,5 @@
 # Stock Market Prediction using Numerical and Textual Analysis
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-   - [Downloading the Jupyter Notebook file](#downloading-the-jupyter-notebook-file)
-   - [Modifying the code](#modifying-the-code)
-   - [Installing required libraries](#installing-required-libraries)
-   - [Executing the code](#executing-the-code)
-   - [Viewing the output and predictions](#viewing-the-output-and-predictions)
-   - [Customizing the code and experimenting](#customizing-the-code-and-experimenting)
-   - [Saving modifications and output](#saving-modifications-and-output)
-- [Steps Involved](#steps-involved)
-   - [Data Collection](#data-collection)
-   - [Data Preprocessing](#data-preprocessing)
-   - [Numerical Analysis](#numerical-analysis)
-     - [Plotting Closing Price of Netflix](#plotting-closing-price-of-netflix)
-     - [Plotting Adjusted Closing Price](#plotting-adjusted-closing-price)
-     - [Comparing Trends with Competitors](#comparing-trends-with-competitors)
-     - [Plotting Moving Averages](#plotting-moving-averages)
-     - [Plotting Candlestick Chart](#plotting-candlestick-chart)
-     - [Plotting Support and Resistance Levels](#plotting-support-and-resistance-levels)
-     - [Correlation Analysis](#correlation-analysis)
-     - [Autocorrelation Analysis](#autocorrelation-analysis)
-     - [Yearly Aggregated Trend](#yearly-aggregated-trend)
-     - [Monthly Aggregated Trend](#monthly-aggregated-trend)
-     - [Calculating Daily Returns and Volatility](#calculating-daily-returns-and-volatility)
-     - [Analyzing Weekday Mean Stock Price](#analyzing-weekday-mean-stock-price)
-     - [Performing Seasonal Decomposition](#performing-seasonal-decomposition)
-   - [Textual Analysis](#textual-analysis)
-     - [TextBlob Sentiment Analysis](#textblob-sentiment-analysis)
-     - [VADER Sentiment Analysis](#vader-sentiment-analysis)
-     - [Sentiment Analysis Visualization](#sentiment-analysis-visualization)
-   - [Feature Integration](#feature-integration)
-- [Conclusion](#conclusion)
-- [References](#references)
-
-
 ## Overview
 This repository presents a hybrid model for predicting stock prices by leveraging numerical analysis of historical stock prices and textual analysis of news headlines. The primary objective of this project is to develop an effective approach that combines both quantitative and qualitative factors to enhance stock price/performance prediction.
 
